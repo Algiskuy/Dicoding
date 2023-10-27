@@ -1,0 +1,594 @@
+* {
+  margin: 0 auto;
+  max-width: 1800px;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/* header */
+header {
+  position: fixed;
+  z-index: 50;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  box-shadow: 2px 2px 8px rgba(66, 61, 61, 0.368);
+  background-color: white;
+  gap: 20px;
+  width: 100%;
+}
+/* header left */
+.headerLeft {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+  margin-right: 0;
+}
+.headerLogoFb {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 100%;
+  transition: 1s;
+}
+.headerLogoFb:hover {
+  box-shadow: 0px 1px 4px red;
+}
+.headerLeftSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerLeftSearchBox {
+  display: flex;
+  align-items: center;
+  background-color: #e9f1f0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: max-content;
+  border-radius: 30px;
+}
+.headerLogoSearch {
+  width: 20px;
+  height: 20px;
+}
+.headerLeftSearch input {
+  border-radius: 30px;
+  border: transparent;
+  padding-left: 5px;
+  padding-right: 10px;
+  height: 30px;
+  outline: none;
+  font-size: large;
+  background-color: #e9f1f0;
+}
+/* header center */
+.headerCenter {
+  width: 30%;
+}
+.headerCenter ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.headerCenter ul li:hover {
+  box-shadow: 1px 1px 8px black;
+  border-radius: 7px;
+  transition: 1s;
+}
+.headerCenter ul li img {
+  width: 40px;
+  padding: 4px;
+  height: 40px;
+}
+/* header right */
+.headerRight {
+  margin-right: 50px;
+}
+.headerRight ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  align-items: center;
+}
+.headerRight ul li:hover {
+  box-shadow: 1px 1px 8px black;
+  border-radius: 7px;
+  transition: 1s;
+}
+.headerRight ul li img {
+  width: 35px;
+  height: 35px;
+  padding: 4px;
+}
+.headerProfile {
+  border-radius: 100%;
+}
+.headerProfile:hover {
+  box-shadow: 1px 1px 8px black;
+  border-radius: 7px;
+  transition: 1s;
+}
+.menu {
+  display: none;
+  align-items: center;
+}
+.imgMenu {
+  width: 35px;
+  height: 35px;
+  padding: 4px;
+}
+/* main */
+.main {
+  padding-top: 96px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  background-color: #f2f0f0;
+}
+/* main left */
+.position {
+  margin-left: 10px;
+  position: relative;
+  margin-right: auto;
+}
+.mainLeft {
+  position: fixed;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 550px;
+  overflow-y: scroll;
+  margin-right: 0;
+}
+
+/* Mengubah tampilan scroll bar dan thumb */
+.mainLeft::-webkit-scrollbar {
+  width: 8px;
+}
+
+.mainLeft::-webkit-scrollbar-thumb {
+  background-color: #afafaf;
+  border-radius: 4px;
+}
+.contentMainLeft {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  cursor: pointer;
+  transition: 1s;
+}
+.contentMainLeft:hover,
+.contentMainLeft:hover img {
+  box-shadow: 1px 1px 2px gray;
+  border-radius: 7px;
+  transition: 1s;
+}
+.contentMainLeftText {
+  margin-left: 0;
+}
+.contentMainLeft img {
+  border-radius: 100%;
+  margin: 0;
+}
+
+/* main center */
+.mainCenter {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: 630px;
+  margin: 0;
+  overflow: hidden;
+}
+.statusMobile {
+  border-radius: 10px;
+  display: none;
+}
+.status1Mobile {
+  background-color: white;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+  margin: 0;
+}
+.createImgMobile {
+  width: 70px;
+  height: 70px;
+  margin: 0;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.statusbox1Mobile {
+  display: flex;
+  justify-content: center;
+}
+.statusbox1-1Mobile {
+  display: flex;
+  align-items: center;
+  background-color: #eefffd;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: max-content;
+  border-radius: 30px;
+  width: 70%;
+  margin: 0;
+}
+.statusSearchMobile {
+  width: 20px;
+  height: 20px;
+}
+.statusbox1-1Mobile input {
+  border-radius: 30px;
+  border: transparent;
+  padding-left: 5px;
+  padding-right: 10px;
+  height: 30px;
+  outline: none;
+  font-size: large;
+  background-color: #eefffd;
+  margin: 0;
+  width: 100%;
+  font-size: x-large;
+}
+
+.uploadFotoImgMobile {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.uploadFotoMobile p {
+  font-size: large;
+}
+.story {
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+  gap: 10px;
+  margin: 0;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+}
+.story::-webkit-scrollbar {
+  height: 8px;
+}
+.story::-webkit-scrollbar-thumb {
+  background-color: #afafaf;
+  border-radius: 4px;
+}
+.contentStory {
+  border-radius: 10%;
+  padding: 0;
+  margin: 0;
+  border: 1px solid black;
+  height: 300px;
+}
+.imgStory {
+  width: 200px;
+  height: 300px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+/* beranda */
+.beranda {
+  width: 100%;
+  padding: 10px;
+}
+.status {
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+}
+.status1 {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+  margin: 0;
+}
+.createImg {
+  width: 70px;
+  height: 70px;
+  margin: 0;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.statusbox1 {
+  display: flex;
+  justify-content: center;
+}
+.statusbox1-1 {
+  display: flex;
+  align-items: center;
+  background-color: #eefffd;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: max-content;
+  border-radius: 30px;
+  width: 70%;
+  margin: 0;
+}
+.statusSearch {
+  width: 20px;
+  height: 20px;
+}
+.statusbox1-1 input {
+  border-radius: 30px;
+  border: transparent;
+  padding-left: 5px;
+  padding-right: 10px;
+  height: 30px;
+  outline: none;
+  font-size: large;
+  background-color: #eefffd;
+  margin: 0;
+  width: 100%;
+  font-size: x-large;
+}
+.status2 {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+.live {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.live:hover {
+  background-color: rgb(225, 225, 225);
+  transition: 1s;
+  border-radius: 10px;
+}
+.liveImg {
+  width: 50px;
+  height: 50px;
+}
+.live p {
+  font-size: large;
+}
+.uploadFoto {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.uploadFoto:hover {
+  background-color: rgb(225, 225, 225);
+  transition: 1s;
+  border-radius: 10px;
+}
+.uploadFotoImg {
+  width: 50px;
+  height: 50px;
+}
+.uploadFoto p {
+  font-size: large;
+}
+/* content beranda */
+.contentBeranda {
+  background-color: white;
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.pemilikContent {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.namaPemilik {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  cursor: pointer;
+}
+.imgPemilikContent {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  border-radius: 100%;
+}
+.titik {
+  margin: 0;
+  font-size: xx-large;
+  cursor: pointer;
+  height: max-content;
+  border: transparent;
+  margin-right: 5px;
+}
+.isi {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: larger;
+  padding-right: 5px;
+}
+.statusImg {
+  overflow: hidden;
+  max-width: 100%;
+  cursor: pointer;
+}
+.like1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.like1 .like2,
+.like3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: large;
+  margin: 0;
+}
+.buttons {
+  display: flex;
+  gap: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.buttons aside {
+  margin-top: 5px;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  font-size: x-large;
+}
+.buttons aside:hover {
+  background-color: rgb(225, 225, 225);
+  transition: 1s;
+  border-radius: 10px;
+}
+
+/* main right */
+.positionRight {
+  position: relative;
+  margin-left: 10%;
+}
+.mainRight {
+  width: 300px;
+  margin-left: auto;
+  position: fixed;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-right: 0;
+  height: 550px;
+  overflow-y: scroll;
+}
+.mainRight::-webkit-scrollbar {
+  width: 8px;
+}
+.seponsor {
+  text-align: left;
+  margin: 0;
+}
+.mainRight::-webkit-scrollbar-thumb {
+  background-color: #afafaf;
+  border-radius: 4px;
+}
+.contentMainRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+}
+.iklan {
+  margin-left: 0;
+  cursor: pointer;
+}
+.iklan:hover {
+  background-color: rgb(225, 225, 225);
+  transition: 1s;
+  border-radius: 10px;
+}
+.iklan1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 10px;
+}
+.imgIklan {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  margin: 0;
+}
+.kontak {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.kontak p {
+  margin: 0;
+}
+.daftar {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0;
+}
+.searchKontak {
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+.searchTemen {
+  cursor: pointer;
+  width: 20px;
+}
+.searchKontak span {
+  cursor: pointer;
+}
+
+.contentMainRightText {
+  margin-left: 0;
+}
+.contentMainRight img {
+  border-radius: 100%;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+}
+.contentMainRight:hover,
+.contentMainRight:hover img {
+  box-shadow: 1px 1px 2px gray;
+  border-radius: 7px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+/* footer */
+.footer {
+  background-color: white;
+  box-shadow: -2px -1px 4px black;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  z-index: 50;
+  display: flex;
+}
+.sumber {
+  display: flex;
+  justify-content: space-between;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,226 @@
+* {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1800px;
+}
+
+#nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#nav:target {
+  transform: translateY(-50vh);
+  transition: transform 0.5s ease-in-out;
+}
+
+#clock {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  border: 2px solid blue;
+  border-radius: 10px;
+  padding: 10px;
+  width: 60px;
+  transition: 0.5s;
+  cursor: none;
+  text-align: center;
+}
+#clock:hover {
+  box-shadow: 0 0 4px red;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#root {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  position: relative;
+}
+#root header {
+  font-weight: 600;
+  font-size: xx-large;
+  text-align: center;
+  box-shadow: 0 0 4px 2px blue;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.BoxShare {
+  border: 2px solid blue;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.cariBuku {
+  font-weight: 600;
+  font-size: x-large;
+  margin-bottom: 10px;
+}
+.formShare {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  height: max-content;
+}
+#share {
+  width: 80%;
+  padding: 5px;
+  font-size: x-large;
+  outline: none;
+  margin-right: 0;
+}
+.buttonCari {
+  padding: 9px;
+  margin-left: 0;
+  font-size: large;
+  cursor: pointer;
+}
+
+#form {
+  text-align: center;
+  font-size: xx-large;
+  border: 2px solid blue;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+#judul,
+#penulis,
+#tahun {
+  width: 80%;
+  padding: 5px;
+  font-size: x-large;
+  outline: none;
+}
+.label-checkbox {
+  text-align: start;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+#checkbox {
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  cursor: pointer;
+}
+#divCheckbox {
+  display: flex;
+  width: 80%;
+  font-size: x-large;
+}
+#form button {
+  width: 80%;
+  padding: 5px;
+  font-weight: 500;
+  font-size: x-large;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.combineText {
+  margin-bottom: 20px;
+  border: 2px solid blue;
+  padding: 20px;
+  border-radius: 20px;
+  word-wrap: break-word;
+}
+.combineText:hover {
+  transition: 0.5s;
+  box-shadow: 0 0 8px red;
+}
+
+.divBelumSelesai {
+  border: 2px solid blue;
+  border-radius: 20px;
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.divBelumSelesai p {
+  font-size: x-large;
+  margin-bottom: 20px;
+}
+
+#selesaiDibaca {
+  border: 2px solid blue;
+  border-radius: 20px;
+  width: 60%;
+  padding: 10px;
+}
+#selesaiDibaca p {
+  font-size: x-large;
+  margin-bottom: 20px;
+}
+
+.sudah-dibaca {
+  background-color: aqua;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  font-size: large;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.sudah-dibaca:hover {
+  background-color: rgb(31, 146, 164);
+  color: white;
+}
+
+.hapus-buku {
+  background-color: red;
+  color: white;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  font-size: large;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.hapus-buku:hover {
+  background-color: brown;
+}
+.belum-dibaca {
+  background-color: aqua;
+  padding: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: large;
+  transition: 0.5s;
+}
+
+.belum-dibaca:hover {
+  background-color: rgb(31, 146, 164);
+  color: white;
+}
+
+.edit-buku {
+  background-color: chartreuse;
+  padding: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: large;
+  transition: 0.5s;
+}
+.edit-buku:hover {
+  background-color: green;
+  color: white;
+}

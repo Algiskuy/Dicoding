@@ -1,0 +1,38 @@
+@media screen and (min-width: 2000px) {
+  #clock {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .BoxShare {
+    width: 80%;
+  }
+  #form {
+    width: 80%;
+  }
+  .divBelumSelesai {
+    width: 80%;
+  }
+  #selesaiDibaca {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .BoxShare {
+    width: 90%;
+  }
+  #form {
+    width: 90%;
+  }
+  .divBelumSelesai {
+    width: 90%;
+  }
+  #selesaiDibaca {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 700px) {
+  #clock {
+    display: none;
+  }
+}

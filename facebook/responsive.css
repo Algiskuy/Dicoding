@@ -1,0 +1,101 @@
+@media screen and (max-width: 1100px) {
+  .mainLeft {
+    display: none;
+  }
+  .position {
+    display: none;
+  }
+  .mainRight {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .headerCenter {
+    display: none;
+  }
+  .mainLeft {
+    display: none;
+  }
+  .mainRight {
+    height: 800px;
+  }
+  .position {
+    display: none;
+  }
+  .positionRight {
+    margin-left: 0;
+  }
+  .menu {
+    display: flex;
+  }
+  .main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .status {
+    display: none;
+  }
+  .statusMobile {
+    display: contents;
+  }
+  .mainCenter {
+    width: 65%;
+  }
+  .beranda {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    padding-top: 70px;
+    padding-left: 0;
+  }
+  .mainCenter {
+    width: 95%;
+  }
+  .mainRight,
+  .positionRight {
+    display: none;
+  }
+  .headerLogoFb {
+    width: 30px;
+    height: 30px;
+  }
+  .headerLogoSearch {
+    width: 20px;
+    height: 20px;
+  }
+  .headerLeftSearchBox {
+    padding: 5px;
+  }
+  .headerLeftSearch input {
+    width: 150px;
+  }
+  .headerRight {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+  .uploadFotoImgMobile {
+    display: none;
+  }
+  .statusSearchMobile {
+    display: none;
+  }
+  .story {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .buttons {
+    gap: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .buttons aside {
+    font-size: large;
+  }
+}
